@@ -11,14 +11,32 @@
     </header>
     <main>
       <section id="dadospessoais">
-        <!--Nome do usuario-->
         <form action="" method="get">
-          <!--Abrindo formulario-->
+          <!--DADOS PESSOAIS-->
           <label for="userName">Nome</label>
-          <input type="text" name="userName" />
-          <!--Nome usuario-->
+          <input type="text" name="userName" required />
+
+          <label for="userAge">Idade</label>
+          <input type="number" name="userAge" min="12" max="100" required />
+
+          <label for="birthdate">Data de nascimento</label>
+          <input type="date" name="birthdate" />
+
+          <label for="userEmail">Email</label>
+          <input type="email" name="userEmail" required />
+
+          <label for="userPhoneNumber">Telefone</label>
+          <input
+            type="tel"
+            name="userPhoneNumber"
+            pattern="[0-9]{11}"
+            placeholder="(DDD)+ números sem espaço ou hifen"
+          />
+
+          <label for="userPerfil">Foto de perfil</label>
+          <input type="file" accept="imagens/*" name="userPerfil" />
+          <!--bOTÃO ENVIAR-->
           <button type="submit">Enviar</button>
-          <!--Botão-->
         </form>
       </section>
     </main>
