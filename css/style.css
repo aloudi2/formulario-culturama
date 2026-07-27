@@ -26,11 +26,15 @@ img {
 h1 {
   font-family: "Fjalla one", sans-serif; /*Titulo define fonte*/
 }
-
+p {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
 form {
   background-color: white;
   padding: 15px;
   border-radius: 10px;
+  margin-bottom: 100px;
 }
 
 fieldset {
@@ -75,4 +79,32 @@ input[type="color"] {
   /*Melhorando seleção de cor favorita*/
   width: 40px;
   padding: 0 5px;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: green;
+}
+button[type="reset"]:hover {
+  background-color: rgb(221, 85, 39);
 }
