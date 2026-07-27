@@ -25,6 +25,7 @@ img {
 }
 h1 {
   font-family: "Fjalla one", sans-serif; /*Titulo define fonte*/
+  text-align: center;
 }
 p {
   margin-bottom: 15px;
