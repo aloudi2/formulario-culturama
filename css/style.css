@@ -76,6 +76,15 @@ input[type="checkbox"] {
   width: auto;
 }
 
+input[Type="tel"],
+input[type="file"] {
+  margin-bottom: 0;
+}
+small {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
 input[type="color"] {
   /*Melhorando seleção de cor favorita*/
   width: 40px;

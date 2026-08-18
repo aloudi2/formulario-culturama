@@ -51,7 +51,13 @@
               name="userPhoneNumber"
               pattern="[0-9]{11}"
               placeholder="(DDD)+ números sem espaço ou hifen"
+              aria-describedby="phoneHelp"
             />
+            <!--Coloca uma instrução abaixo do input para melhorar acessibilidade-->
+            <small id="phoneHelp"
+              >Preencha com 11 digitos no formato número sem espaços ou
+              hifen</small
+            >
             <br />
             <label for="fotoperfil">Foto de perfil</label>
             <input
@@ -59,7 +65,11 @@
               type="file"
               accept="imagens/*"
               name="userPerfil"
+              aria-describedby="image-help"
             />
+            <small id="image-help"
+              >Envie uma foto no formato png ou jpeg
+            </small>
             <br />
           </fieldset>
 
@@ -201,8 +211,12 @@
             <label for="userLgpdTerm">Eu aceito receber o resultado.</label>
           </fieldset>
           <!--bOTÃO ENVIAR-->
-          <button type="submit">Enviar</button>
-          <button type="reset">Limpar</button>
+          <button type="submit" aria-label="enviar dados do formulario">
+            Enviar
+          </button>
+          <button aria-label="limpar dados do formulario" type="reset">
+            Limpar
+          </button>
         </form>
       </section>
     </main>
